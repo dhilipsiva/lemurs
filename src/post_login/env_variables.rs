@@ -22,7 +22,7 @@ pub fn init_environment(username: &str, homedir: &str, _shell: &str) {
 
     env_set_and_announce("USER", username);
     env_set_and_announce("LOGNAME", username);
-    env_set_and_announce("PATH", &format!("{homedir}/bin:{homedir}/bin/firefox:{homedir}/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/bin"));
+    env_set_and_announce("PATH", &format!("{homedir}/bin:{homedir}/bin/firefox:{homedir}/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin"));
     env_set_and_announce("EDITOR", "hx");
     env_set_and_announce("SHELL", &format!("{homedir}/.cargo/bin/nu"));
 
